@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<title>TREINAMENTO BOOTSTRAP 3 - BOTÕES</title>
+	</head>
+	<body>
+
+		<!-- Criando um container e um grid no padrão BOOTSTRAP 3 -->
+		<div class="container">
+			<div class=row">
+				<div class"col-sm-12">
+					<!-- Testando alguns tipos de botões disponíveis no BOOTSTRAP 3 -->
+					<h2 class="text-center">TRABALHANDO COM A CLASSE BUTTON DO BOOTSTRAP 3</h2>
+					<hr>
+					<a href="#" class="btn btn-default">BUTTON DEFAULT</a>
+				
+					<a href="#" class="btn btn-primary">BUTTON PRIMARY</a>
+				
+					<a href="#" class="btn btn-success">BUTTON SUCCESS</a>
+			
+					<a href="#" class="btn btn-danger">BUTTON DANGER</a>
+					
+					<a href="#" class="btn btn-info">BUTTON INFO</a>
+					
+					<a href="#" class="btn btn-warning">BUTTON WARNING</a>
+					
+					<a href="#" class="btn btn-link">BUTTON LINK</a>
+					
+					<!-- A classe "button" no exemplo acima foi utilizada no elemento "a href", no entanto, a mesma pode ser utilizada também em outros
+					elementos, como no elemento "button" e no elemento "input do tipo submit" conforme exemplos abaixo: -->
+					
+					<hr>
+					<button class="btn btn-primary">BOTÃO COM O ELEMENTO BUTTON</button>
+					
+					<hr>
+					<input type="submit" value="BOTÃO COM O ELEMENTO INPUT" class="btn btn-default"/>
+				
+					</div>
+					
+					<hr>
+					<h3 class="text-center">TAMANHOS DOS BOTÕES</h3>
+					<!-- novo container com grid para demonstrar os tamanhos de botões disponíveis no BOOTSTRAP 3 -->
+					<div class="container">
+						<div class="row">
+						
+							<div class="col-sm-2">
+								<button class="btn btn-default btn-xs">BUTTON EXTRA SMALL</button>
+							</div>
+							
+							<div class="col-sm-2">
+								<button class="btn btn-default btn-sm active">BUTTON SMALL</button>
+							</div>
+							
+							<div class="col-sm-2">
+								<button class="btn btn-default">BUTTON DEFAULT</button>
+							</div>
+							
+							<div class="col-sm-2">
+								<button class="btn btn-danger btn-lg" disabled = "disabled">BUTTON LARGE</button>
+							</div>
+								
+						</div>
+					</div>
+					
+					<hr>
+					<!-- novo container com grid para demonstrar a propriedade "block" dos buttons. Essa propriedade faz com que os buttons que a recebem
+					ocupem todo o espaço definido para eles no grid. -->
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<button class="btn btn-primary btn-lg btn-block">BUTTON BLOCK</button>
+								<button class="btn btn-warning btn-xs btn-block"">BUTTON BLOCK</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/main.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
+	</body>
+</html>

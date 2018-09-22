@@ -1,0 +1,13 @@
+body {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.login {
+	width: 0 auto;
+	height: 50px;
+}
+
+a:link, a:visited, a:hover {
+	text-decoration: none;
+}
