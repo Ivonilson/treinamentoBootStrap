@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<title>FORMULÁRIOS - BOOTSTRAP 3 </title>
+	</head>
+	<body>
+
+		<!-- Criando um container e um grid no padrão BOOTSTRAP 3 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<!-- criando formulário -->
+					<!-- por default o form vem disposto em blocos (form-block), mas caso seja necessário pode-se alterar para o "form-inline", conforme exemplo abaixo: -->
+					<h4>FORM INLINE</h4>
+					<form class="form-inline">
+						<!-- para cada elemento que se deseja aplicar a formatação de
+						formulários do BOOTSTRAP deve-se declarar um "form-group" -->
+						<div class="form-group">
+							<label for="nome">Nome Completo:</label>
+							<input type="text" class="form-control" id="nome">
+
+							<!-- a presença de labels é importante para a acessibilidade e os leitores de tela. Caso entenda-se que o mesmo não deve aparecer sobre os campos, então é possível fazer que com os mesmos não apareçam na tela, mas que ainda assim permaneçam declarados na marcação, utilizando a declaração na class "sr-only", conforme no exemplo abaixo: --> 
+							<label for="tipo" class="sr-only">Tipo:</label>
+							<select class="form-control">
+								<option>Pessoa Física</option>
+								<option>Pessoa Jurídica</option>
+							</select>
+
+						</div>
+					</form>
+					<hr>
+					<br>
+					<h4>FORM HORIZONTAL</h4>
+					<!-- form-horizontal - com esta propriedade é possível a aplicação de grids nos elementos do formulário -->
+					<form class="form-horizontal">
+						<!-- para cada elemento que se deseja aplicar a formatação de
+						formulários do BOOTSTRAP deve-se declarar um "form-group" -->
+						<div class="form-group">
+							<label for="nome" class="col-xs-2 control-label">
+								Nome Completo:</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control" id="nome">
+							</div>	
+							<!-- a presença de labels é importante para a acessibilidade e os leitores de tela. Caso entenda-se que o mesmo não deve aparecer sobre os campos, então é possível fazer que com os mesmos não apareçam na tela, mas que ainda assim permaneçam declarados na marcação, utilizando a declaração na class "sr-only", conforme no exemplo abaixo: --> 
+						</div>
+
+						<div class="form-group">
+							<label for="tipo" class="col-xs-2 control-label">
+								Selecione
+							</label>
+
+							<div class="col-xs-10">
+								<label class="checkbox-inline">
+									<input type="checkbox" id="id1"> 1
+								</label>
+
+								<label class="checkbox-inline">
+									<input type="checkbox" id="id2"> 2
+								</label>
+
+								<label class="checkbox-inline">
+									<input type="checkbox" id="id3"> 3
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-offset-2 col-xs-10">
+								<button type="submit" class="btn btn-default">Enviar</button>
+							</div>
+						</div>
+
+						<!-- Demonstrando o form-control-static que torna o conteúdo do elemento não editável -->
+						<div class="form-group">
+							<label class="col-xs-2 control-label">E-mail:</label>
+							<div class="col-sx-10">
+								<p class="form-control-static">fulanodetal@domain.com</p>
+							</div>
+						</div>
+
+						<!-- elementos de formatação que poderão ser ativados para campos que contenham validações -->
+
+						<div class="form-group has-sucess">
+							<label class="col-xs-2 control-label">HAS SUCESS</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group has-error">
+							<label class="col-xs-2 control-label">HAS ERROR</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group has-warning">
+							<label class="col-xs-2 control-label">HAS WARNNING</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control">
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/main.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
+	</body>
+</html>
