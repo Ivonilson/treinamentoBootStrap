@@ -38,20 +38,21 @@
 					<form class="form-horizontal">
 						<!-- para cada elemento que se deseja aplicar a formatação de
 						formulários do BOOTSTRAP deve-se declarar um "form-group" -->
+						<!-- o "for" do label é apenas um identificador do elemento para os motores de busca, o mesmo acontece com os "ids" dos inputs, ou seja, não afetam a marcação do BootStrap -->
 						<div class="form-group">
 							<label for="nome" class="col-xs-2 control-label">
 								Nome Completo:</label>
 							<div class="col-xs-10">
 								<input type="text" class="form-control" id="nome">
 							</div>	
-							<!-- a presença de labels é importante para a acessibilidade e os leitores de tela. Caso entenda-se que o mesmo não deve aparecer sobre os campos, então é possível fazer que com os mesmos não apareçam na tela, mas que ainda assim permaneçam declarados na marcação, utilizando a declaração na class "sr-only", conforme no exemplo abaixo: --> 
+							<!-- a presença de labels é importante para a acessibilidade e os leitores de tela. Caso entenda-se que o mesmo não deve aparecer sobre os campos, então é possível fazer que com os mesmos não apareçam na tela, mas que ainda assim permaneçam declarados na marcação, utilizando a declaração na class "sr-only", conforme no exemplo abaixo: --> 	
 						</div>
 
 						<div class="form-group">
 							<label for="tipo" class="col-xs-2 control-label">
 								Selecione
 							</label>
-
+							
 							<div class="col-xs-10">
 								<label class="checkbox-inline">
 									<input type="checkbox" id="id1"> 1
@@ -82,25 +83,40 @@
 						</div>
 
 						<!-- elementos de formatação que poderão ser ativados para campos que contenham validações -->
-
-						<div class="form-group has-sucess">
+						<!-- a classe "hass-feedback" possibilita a adição de glyphicon de validação positiva no input onde o mesmo foi acionado -->
+						<div class="form-group has-sucess has-feedback">
 							<label class="col-xs-2 control-label">HAS SUCESS</label>
 							<div class="col-xs-10">
 								<input type="text" class="form-control">
+								<!-- adicionando o span que conterá o glyphicon responsável pelo feedback o input acima -->
+								<span class="glyphicon glyphicon-ok form-control-feedback"></span>
 							</div>
 						</div>
 
-						<div class="form-group has-error">
+						<div class="form-group has-error has-feedback">
 							<label class="col-xs-2 control-label">HAS ERROR</label>
 							<div class="col-xs-10">
-								<input type="text" class="form-control">
+								<input type="text" class="form-control input-lg">
+								<!-- declarando o span que conterá o glyphicon-remove -->
+								<span class="glyphicon glyphicon-remove form-control-feedback"></span>
 							</div>
 						</div>
 
-						<div class="form-group has-warning">
+						<div class="form-group has-warning has-feedback">
+							<label class="col-xs-2 control-label">HAS WARNNING</label>
+							<div class="col-xs-10">
+								<input type="text" class="form-control input-sm">
+								<!-- adicionando o span que contem o glyphicon-warning. Neste caso é necessário declará o sign no final, ficando da seguinte forma: glyphicon-warning-sign.-->
+								<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+							</div>
+						</div>
+
+						<div class="form-group form-lg has-sucess">
 							<label class="col-xs-2 control-label">HAS WARNNING</label>
 							<div class="col-xs-10">
 								<input type="text" class="form-control">
+								<!-- Adicionando texto de ajuda com a classe help-block adicionada no span.-->
+								<span class="help-block">CPF: 111.111.111.-11</span>
 							</div>
 						</div>
 

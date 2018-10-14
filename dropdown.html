@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<title>DROPDOWN - BOOTSTRAP 3 </title>
+	</head>
+	<body>
+
+		<!-- Criando um container e um grid no padrão BOOTSTRAP 3 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>DROPDOWNS</h1>
+					<!-- declarando a div que conterá o elemento dropdwon -->
+					<div class="dropdown">
+						<!-- declarando um btn-default e logo em seguida declarando que o elemento trata-se de um elemento do tipo dropdown. Isso é feito com a class "dropdown-toggle". E necessário que seja declarado um id para o btn. Por fim, declara-se o data-toggle que é o seletor para o elemento do BootStrap -->
+						<button class="btn btn-default dropdown-toggle" type="button" id="btnDropdown01" data-toggle="dropdown">
+							<!-- nome do botão dropdown -->
+							Menu Dropdown
+							<!-- declarando a "setinha" do dropdown onde os elementos do botão ficam escondidos -->
+							<span class="caret"></span>
+						</button>
+						<!-- declarando a lista de itens que ficará dentro do dropdown -->
+						<!-- abaixo está sendo declarado que o elemento "ul" trata-se de um submenu de um elemento. Em seguida declara-se a "role" e, por fim, declara-se o aria labelledby que apontará para o id do dropdown -->
+						<ul class="dropdown-menu" role="menu" aria-labelledby="btnDropdown01">
+							<!-- declara-se a "role=presentation" para que o elemento passe a ser do tipo item do submenu dropdown -->
+							<li role="presentation">
+								<!-- declarando a role menuitem (tudo junto mesmo)-->
+								<a href="#" role="menuitem">Opção 1</a>
+							</li>
+
+							<li role="presentation">
+								<a href="#" role="menuitem">Opção 2</a>
+							</li>
+
+							<li role="presentation">
+								<a href="#" role="menuitem">Opção 3</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/main.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
+	</body>
+</html>
