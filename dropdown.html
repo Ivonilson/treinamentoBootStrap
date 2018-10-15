@@ -14,9 +14,10 @@
 				<div class="col-xs-12">
 					<h1>DROPDOWNS</h1>
 					<!-- declarando a div que conterá o elemento dropdwon -->
+					<!-- lembre-se de chamar primeiro o arquivo jquery, o qual deve ser chamado antes do js.min e do main.js -->
 					<div class="dropdown">
 						<!-- declarando um btn-default e logo em seguida declarando que o elemento trata-se de um elemento do tipo dropdown. Isso é feito com a class "dropdown-toggle". E necessário que seja declarado um id para o btn. Por fim, declara-se o data-toggle que é o seletor para o elemento do BootStrap -->
-						<button class="btn btn-default dropdown-toggle" type="button" id="btnDropdown01" data-toggle="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownbtn01" data-toggle="dropdown">
 							<!-- nome do botão dropdown -->
 							Menu Dropdown
 							<!-- declarando a "setinha" do dropdown onde os elementos do botão ficam escondidos -->
@@ -24,7 +25,11 @@
 						</button>
 						<!-- declarando a lista de itens que ficará dentro do dropdown -->
 						<!-- abaixo está sendo declarado que o elemento "ul" trata-se de um submenu de um elemento. Em seguida declara-se a "role" e, por fim, declara-se o aria labelledby que apontará para o id do dropdown -->
-						<ul class="dropdown-menu" role="menu" aria-labelledby="btnDropdown01">
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownbtn01">
+							<!-- declarando uma li para ser o cabeçalho do menu -->
+							<li role="presentation" class="dropdown-header">
+								CABEÇALHO DO MENU
+							</li>
 							<!-- declara-se a "role=presentation" para que o elemento passe a ser do tipo item do submenu dropdown -->
 							<li role="presentation">
 								<!-- declarando a role menuitem (tudo junto mesmo)-->
@@ -46,8 +51,8 @@
 			</div>
 		</div>
 
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/main.js"></script>
-		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
 	</body>
 </html>
