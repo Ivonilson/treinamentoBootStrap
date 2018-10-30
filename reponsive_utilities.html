@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<title>RESPONSIVE UTILITIES - BOOTSTRAP 3 </title>
+
+		<style type="text/css">
+			.bg-color-padding p {
+				padding: 15px;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<!-- Criando um container e um grid no padrão BOOTSTRAP 3 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 bg-color-padding">
+						<!--As utilities classes são utizadas para esconder alguns elementos dependendo do tamanho da tela -->
+						<p class="bg-primary visible-xs-block">Você está na resolução XS</p>
+						<p class="bg-danger visible-sm-block">Você está na resolução SM</p>
+						<p class="bg-success visible-md-block">Você está na resolução MD</p>
+						<p class="bg-success visible-lg-block">Você está na resolução LG</p>
+
+						<a href="#" class="btn btn-default visible-lg-block">Acesse nossa versão mobile</a>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/main.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
+	</body>
+</html>
