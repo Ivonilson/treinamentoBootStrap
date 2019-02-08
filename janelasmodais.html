@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1, user-scalable= no">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<title>ELEMENTOS NAV - BOOTSTRAP 3 </title>
+	</head>
+	<body>
+
+		<!-- Criando um container e um grid no padrão BOOTSTRAP 3 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pageheader">
+						<h1>Janelas Modais</h1>
+
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Abrir janela modal</button>
+						<!-- inicio da janela modal -->
+						<div class="modal fade" id="modal01" role="dialog" tabindex="-1" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">
+											<span aria-hidden="true">&times;</span>
+											<span class="sr-only">Fechar Janela</span>
+										</button>
+
+										<h4 class="modal-title">Janelas Modais</h4>
+									</div>
+
+									<div class="modal-body">
+										<p>Conteúdo da Janela Modal</p>
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- fim da janela modal -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/main.js"></script>
+	</body>
+</html>
