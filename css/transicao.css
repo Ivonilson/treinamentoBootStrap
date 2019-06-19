@@ -1,0 +1,83 @@
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  line-height: 40px;
+  font-family: 'Muli';
+  color: green;
+  height: 70px;
+  overflow: hidden;
+}
+
+.visible {
+  font-weight: 600;
+  overflow: hidden;
+  height: 60px;
+  padding: 0 40px;
+}
+.visible:before {
+  left: 0;
+  line-height: 40px;
+}
+.visible:after {
+  position: absolute;
+  right: 0;
+  line-height: 60px;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: green;
+  font-size: 42px;
+  animation: 1s linear 0s normal none infinite opacity;
+}
+
+.content p {
+  display: inline;
+  float: left;
+  margin-top: 20px;
+}
+
+.content ul {
+  margin-top: 0;
+  text-align: center;
+  list-style: none;
+  animation: 10s linear 10s normal none infinite change;
+  width: 400px;
+}
+
+ul li {
+  line-height: 60px;
+  margin: 0;
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12%, 100% {
+    transform: translateY(0);
+  }
+  17%,29% {
+    transform: translateY(-25%);
+  }
+  34%,46% {
+    transform: translateY(-50%);
+  }
+  51%,63% {
+    transform: translateY(-75%);
+  }
+  68%,80% {
+    transform: translateY(-50%);
+  }
+  85%,97% {
+    transform: translateY(-25%);
+  }
+}
