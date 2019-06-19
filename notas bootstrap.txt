@@ -1,0 +1,70 @@
+﻿GRIDS
+- Para alinhar o conteúdo de uma ROW ao CENTRO utilize a seguinte classe "justify-content-center".
+- Para alinhar o conteúdo de uma ROW a DIREITA utiliza a seguinte classe "justify-content-end".
+- Para definir a ordem de exibição das cols, utilize a classe order. Ex: "order-12", "order-1", etc.
+
+IMAGENS
+- Para flutar as imagens a direita e a esquerda dentro das cols, utilize a seguinte classe: "img float-left" ou "img float-right".
+- Para centralizar a imagem na col, basta utilizar a combinação de duas classes: "mx-auto d-block".
+
+BOTÕES
+- 
+
+MENU DROPDOWN
+- Para transformar um elemento em um dropdown, primeiro cria-se uma div com a classe "dropdown", posteriormente cria-se o elemento que irá ser transformando num dropdown (ex: button, etc.) e declara-se na classe os seguintes parâmetros: id="#", dropdown-toggle",  "data-toggle=dopdown", "aria-haspopup='true'", aria-expanded="false". Em seguida cria-se uma div onde ficará os itens do menu e declara-se na classe o seguinte: "dropdown-menu", aria-labelledby="#id". Em seguida cria-se os links (<a></a>) declarando em suas classes o seguinte: "dropdown-item". Obs.: caso o dropdown seja elaborado diretamente em um link, deve-se acrescentar na mesma classe que contem o "href" o parâmetro "role='buttom'", onde o mesmo fará com que o elemento tenha o mesmo comportamento de um botão. Para acrescentar um header ao itens de menu, utilze na classe em um elemento o "dropdown-header" e para colocar um linha separando os ites do menu utlize "dropdown-divider"
+
+NAVEGAÇÃO
+- Para tornar os elementos (links, listas, etc) em menu, basta acrescentar a class "nav". Para alinhar os elementos navs ao centro acrescente à classe o seguinte: "justify-content-center", para a direita: "justify-content-end", para criar uma navegação vertical (com os elementos um sobre o outro), acrescente à classe "flex-column"
+
+TOOLTIP
+- Para a utilização de TOOLTIP é necessário habilitá-lo através da seguinte função JS: 
+  $(function(){
+  	$('[data-toggle="tooltip"]').tooltip()
+  });
+- Realizada a função acima e feita a chamada na página que vai se utilizar, para habilitar o tooltip em um elemento basta passar os seguintes parâmetros no mesmo: data-toggle="tooltip"  data-placement="aqui vai a posição do balão de com o title" title="título do tooltip"
+
+POPOVER
+- Para a utilização de POPOVER é necessário habilitá-lo através da seguine função JS:
+  $(function(){
+  	$('[data-toggle="popover"]').popover()
+  });
+- Realizada a função acima e feita a chamada na página que vai se utilizar, para habilitar o popover em um elemento basta passar os seguintes parâmetros no mesmo: data-container="body", data-toggle="popover", data-placement="posição do popover", data-content="conteúdo do popover", title="titulo"
+
+GLYPHICON 
+
+
+GRIDS
+- Para alinhar o conteúdo de uma ROW ao CENTRO utilize a seguinte classe "justify-content-center".
+- Para alinhar o conteúdo de uma ROW a DIREITA utiliza a seguinte classe "justify-content-end".
+- Para definir a ordem de exibição das cols, utilize a classe order. Ex: "order-12", "order-1", etc.
+
+IMAGENS
+- Para flutar as imagens a direita e a esquerda dentro das cols, utilize a seguinte classe: "img float-left" ou "img float-right".
+- Para centralizar a imagem na col, basta utilizar a combinação de duas classes: "mx-auto d-block".
+
+BOTÕES
+- 
+
+MENU DROPDOWN
+- Para transformar um elemento em um dropdown, primeiro cria-se uma div com a classe "dropdown", posteriormente cria-se o elemento que irá ser transformando num dropdown (ex: button, etc.) e declara-se na classe os seguintes parâmetros: id="#", dropdown-toggle",  "data-toggle=dopdown", "aria-haspopup='true'", aria-expanded="false". Em seguida cria-se uma div onde ficará os itens do menu e declara-se na classe o seguinte: "dropdown-menu", aria-labelledby="#id". Em seguida cria-se os links (<a></a>) declarando em suas classes o seguinte: "dropdown-item". Obs.: caso o dropdown seja elaborado diretamente em um link, deve-se acrescentar na mesma classe que contem o "href" o parâmetro "role='buttom'", onde o mesmo fará com que o elemento tenha o mesmo comportamento de um botão. Para acrescentar um header ao itens de menu, utilze na classe em um elemento o "dropdown-header" e para colocar um linha separando os ites do menu utlize "dropdown-divider"
+
+NAVEGAÇÃO
+- Para tornar os elementos (links, listas, etc) em menu, basta acrescentar a class "nav". Para alinhar os elementos navs ao centro acrescente à classe o seguinte: "justify-content-center", para a direita: "justify-content-end", para criar uma navegação vertical (com os elementos um sobre o outro), acrescente à classe "flex-column"
+
+TOOLTIP
+- Para a utilização de TOOLTIP é necessário habilitá-lo através da seguinte função JS: 
+  $(function(){
+  	$('[data-toggle="tooltip"]').tooltip()
+  });
+- Realizada a função acima e feita a chamada na página que vai se utilizar, para habilitar o tooltip em um elemento basta passar os seguintes parâmetros no mesmo: data-toggle="tooltip"  data-placement="aqui vai a posição do balão de com o title" title="título do tooltip"
+
+POPOVER
+- Para a utilização de POPOVER é necessário habilitá-lo através da seguine função JS:
+  $(function(){
+  	$('[data-toggle="popover"]').popover()
+  });
+- Realizada a função acima e feita a chamada na página que vai se utilizar, para habilitar o popover em um elemento basta passar os seguintes parâmetros no mesmo: data-container="body", data-toggle="popover", data-placement="posição do popover", data-content="conteúdo do popover", title="titulo"
+
+GLYPHICON 
+- 
+- 
