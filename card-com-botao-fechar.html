@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CARD COM BOTÃO DE FECHAR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width-device, initial-scale=1, shrink-to-fit=no">
+
+<style>
+			
+.container {
+  display:block;
+}
+
+.x {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 17px;
+    color: #787878;
+    background: #fff;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+	<div class="x">x</div>
+	<
+</div>
+
+<button class="btn">Ver anúncio.</button>
+
+<script>
+
+var content = document.getElementsByClassName('container')[0];
+
+/*document.getElementsByClassName('btn')[0].addEventListener('click',function(){
+	content.style.display = "block";
+	
+});*/
+
+document.getElementsByClassName('x')[0].addEventListener('click',function(){
+	content.style.display = "none";
+});
+
+</script>
+
+</body>
+</html>

@@ -8,46 +8,33 @@
 	<link rel="stylesheet" type="text/css" href="css/abg.css">
 	<link rel="stylesheet" type="text/css" href="css/cssabg.css">
 </head>
+<style>
+			
+.alvo {
+  display: block;
+}
+
+.x {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 17px;
+    color: #787878;
+    background: #fff;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+</style>
+
 <body>
 
-	<div class="container">
+	<div class="container alvo">
 		<div class="row-fluid visualizarGrids">
-			<div class="col-12 visualizarGrids">
+			<div class="offset-8 col-4 visualizarGrids">
 				<div class="card-group">
-					<div class="card">
-						<div class="card-body">
-							<h4 class="card-title"> Título do Cartão </h4>
-							<h6 class="card-subtitle mb-2 text-muted">	Subtítulo do Cartão </h6>
-							<p class="card-text text-justify">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-							</p>
-							<a href="#" class="card-link">Veja Mais</a>
-						</div>
-					</div>
-
-					<div class="card">
-						<img src="images/logo_oficial.png" style="max-height: 100%; max-width: 100% ">
-						<div class="card-body">
-							<h4 class="card-title"> Título do Cartão </h4>
-							<h6 class="card-subtitle mb-2 text-muted">	Subtítulo do Cartão </h6>
-							<p class="card-text text-justify">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-							</p>
-							<a href="#" class="card-link">Veja Mais</a>
-						</div>
-					</div>
-
-					<div class="card">
+					<div class="card" style="max-width: 350px;">
+						<div class="x">x</div>
 						<div class="card-body">
 							<h4 class="card-title"> Título do Cartão </h4>
 							<h6 class="card-subtitle mb-2 text-muted">	Subtítulo do Cartão </h6>
@@ -68,6 +55,21 @@
 		</div>
 
 	</div>
+
+<script>
+
+var content = document.getElementsByClassName('alvo')[0];
+
+/*document.getElementsByClassName('btn')[0].addEventListener('click',function(){
+	content.style.display = "block";
+	
+});*/
+
+document.getElementsByClassName('x')[0].addEventListener('click',function(){
+	content.style.display = "none";
+});
+
+</script>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
